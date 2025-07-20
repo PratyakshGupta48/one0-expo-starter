@@ -13,4 +13,4 @@ WORKDIR /root/one0-expo-starter
 RUN npm ci
 
 # Default command when container runs
-CMD ["npx", "expo", "start", "--tunnel"]
+# CMD ["/bin/bash", "-c", "npx expo start --tunnel || true && while true; do sleep 30; done"]
